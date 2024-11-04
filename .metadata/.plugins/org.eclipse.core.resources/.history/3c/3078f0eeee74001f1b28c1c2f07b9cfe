@@ -1,0 +1,67 @@
+package Calc;
+
+import java.util.Scanner;
+
+public class Calc {
+	public static void main(String[] args) {
+		// CREATE SCANNER OBJECT
+		boolean alive = true;
+		
+		double num1 = 0;
+		double num2 = 0;
+		
+		int numCatch = 0;
+		
+		while(alive) {
+			Scanner sc = new Scanner(System.in);
+			System.out.print("Please insert a number: ");
+			try {
+				System.out.println("test");
+				num1 = sc.nextDouble();
+				alive = false;
+			}catch(Exception e) {
+				System.out.println("Please insert a valid number.");
+				sc.next();
+			}
+			if (numCatch == 10) {
+				alive = false;
+			}else {
+				numCatch += 1;
+			}
+			sc.close();
+		}
+		
+		alive = true;
+		while(alive) {
+			Scanner sc = new Scanner(System.in);
+			System.out.print("Please insert a number: ");
+			try {
+				num2 = sc.nextDouble();
+				alive = false;
+			}catch(Exception e) {
+				System.out.println("Please insert a valid number.");
+				sc.next();
+			}
+			if (numCatch == 10) {
+				alive = false;
+			}else {
+				numCatch += 1;
+			}
+			sc.close();
+		}
+		
+		double TotAdd = num1 + num2;
+		double TotSub = num1 - num2;
+		double TotMul = num1 * num2;
+		double TotDiv = 0;
+		try {
+			TotDiv = num1 / num2;
+		} catch(Exception e) {
+			TotDiv = 0;
+		}
+		
+		double TotThing = num1 % num2;
+		
+		System.out.print("Output: \n Addition - " + TotAdd + "\n Subtract - " + TotSub + "\n Multiply - " + TotMul + "\n Division - " + TotDiv + "\n Thing - " + TotThing);
+	}
+}

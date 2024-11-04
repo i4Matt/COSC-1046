@@ -1,0 +1,78 @@
+package Calc;
+
+import java.util.Scanner;
+// MMH MADE THIS.
+
+public class Calc {
+	public static void main(String[] args) {
+		// CREATE SCANNER OBJECT
+		Scanner sc = new Scanner(System.in);
+		boolean alive = true;
+		
+		float num1 = 0;
+		float num2 = 0;
+		
+		int numCatch = 1;
+		
+		final int NUM = 100;
+		System.out.println(NUM);
+		
+		NUM = 90;
+		
+		System.out.println(NUM);
+		
+		// GET THE FIRST INPUT FROM THE USER
+		while(alive) {
+			System.out.print("Please insert a number: ");
+			try { // CHECKS TO MAKE SURE THAT THE INPUT IS VALID.
+				num1 = sc.nextFloat();
+				alive = false;
+			}catch(Exception e) {
+				if (numCatch == 3) {
+					System.out.println("\nYou have selected the number 6.\n");
+					num1 = 6;
+					alive = false;
+				}else { // 3 STRIKES YOU'RE OUT.
+					System.out.println("\nPlease insert a valid number.");
+					numCatch += 1;
+				}
+				sc.next();
+			}
+		}
+		
+		// RESET VALUES FOR LOOPS.
+		alive = true; numCatch = 1;
+		
+		// GET SECOND INPUT FROM THE USER.
+		while(alive) {
+			System.out.print("Please insert a second number: ");
+			try { // CHECKS TO MAKE SURE THAT THE INPUT IS VALID.
+				num2 = sc.nextFloat();
+				alive = false;
+			}catch(Exception e) {
+				if (numCatch == 3) {
+					System.out.println("\nYou have selected the number 9.\n");
+					num2 = 9;
+					alive = false;
+				}else { // 3 STRIKES YOU'RE OUT.
+					System.out.println("\nPlease insert a valid number.");
+					numCatch += 1;
+				}
+				sc.next();
+			}
+		}
+		
+		float TotAdd = num1 + num2; // ADDS BOTH INPUTS.
+		float TotSub = num1 - num2; // SUB BOTH INPUTS.
+		float TotMul = num1 * num2; // MULTIPLY BOTH INPUTS.
+		double TotDiv = num1 / num2; // DEVIDE BOTH INPUTS.
+		
+		float TotThing = num1 % num2; // I DON'T REMEMBER WHAT THIS IS CALLED BUT I KNOW WHAT IT DOES.
+		
+		// OUTPUTS ALL THE ANSWERS.
+		System.out.print("Output: \n Addition - " + TotAdd + "\n Subtract - " + TotSub + "\n Multiply - " + TotMul + "\n Division - " + TotDiv + "\n Thing - " + TotThing);
+		// I DON'T CARE THAT THIS IS ONE LONG LINE OF TEXT, I COULD SPLIT IT BUT TO STUBERN TO DO SO.
+		
+		sc.close(); // GOOD PRACTICE.
+	}
+}

@@ -1,0 +1,24 @@
+package Calc;
+
+import java.util.Scanner;
+
+public class Calc {
+	public static void main(String[] args) {
+		// CREATE SCANNER OBJECT
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Please insert a fucking number: ");
+		double num1 = sc.nextDouble();
+		System.out.print("\nPlease insert a fucking number AGAIN: ");
+		double num2 = sc.nextDouble();
+		
+		double TotAdd = num1 + num2;
+		double TotSub = num1 - num2;
+		double TotMul = num1 * num2;
+		double TotDiv = num1 / num2;
+		double TotThing = num1 % num2;
+		
+		System.out.print("Output: \n Addition - " + TotAdd + "\n Subtract - " + TotSub + "\n Multiply - " + TotMul + "\n Division - " + TotDiv + "\n Thing - " + TotThing);
+		sc.close();
+	}
+}

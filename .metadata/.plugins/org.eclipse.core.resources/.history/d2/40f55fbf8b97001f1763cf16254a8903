@@ -1,0 +1,20 @@
+package Testing;
+
+public class TeacherSaidSo {
+	
+	public static int sumNatural(int count) {
+		int total = 0;
+		for (int i = 1; i <= count; i++) {
+			total += i;
+		}
+		
+		return total;
+	}
+	public static void main(String[] args) {
+		int nat10 = sumNatural(10);
+		
+		System.out.print(nat10);
+
+	}
+
+}

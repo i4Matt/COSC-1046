@@ -1,0 +1,15 @@
+package Calc;
+
+public class Calc {
+	public static void main(String[] args) {
+		int num1 = 3;
+		int num2 = 3;
+		
+		float TotAdd = num1 + num2;
+		float TotSub = num1 - num2;
+		float TotMul = num1 * num2;
+		float TotDiv = num1 / num2;
+		
+		System.out.print("Output: \n Addition - " + TotAdd + "\n Subtract - " + TotSub + "\n Multiply - " + TotMul + "\n Division - " + TotDiv);
+	}
+}

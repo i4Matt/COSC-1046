@@ -1,0 +1,37 @@
+package Calc;
+
+import java.util.Scanner;
+
+public class Calc {
+	public static void main(String[] args) {
+		// CREATE SCANNER OBJECT
+		Scanner sc = new Scanner(System.in);
+		boolean alive = true;
+		while (alive) {
+			try {
+				
+			}catch(NumberFormatException e) {
+				
+			}
+		}
+		System.out.print("Please insert a number: ");
+		double num1 = sc.nextDouble();
+		System.out.print("Please insert a number AGAIN: ");
+		double num2 = sc.nextDouble();
+		
+		double TotAdd = num1 + num2;
+		double TotSub = num1 - num2;
+		double TotMul = num1 * num2;
+		
+		try {
+			double TotDiv = num1 / num2;
+		} catch(ArithmeticException e) {
+			String TotDiv = "Null";
+		}
+		
+		double TotThing = num1 % num2;
+		
+		System.out.print("Output: \n Addition - " + TotAdd + "\n Subtract - " + TotSub + "\n Multiply - " + TotMul + "\n Division - " + TotDiv + "\n Thing - " + TotThing);
+		sc.close();
+	}
+}

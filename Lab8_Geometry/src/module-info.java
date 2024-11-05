@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module Geometry_Lab {
-}

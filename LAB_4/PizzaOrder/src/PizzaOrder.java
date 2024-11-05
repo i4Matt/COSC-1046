@@ -1,3 +1,7 @@
+/* This is for Lab#4.
+ * Name: Matthew Houle | Date: November 5th 2024 (Re-done the Lab).
+ */
+
 import java.util.Scanner;
 import java.text.DecimalFormat;
 

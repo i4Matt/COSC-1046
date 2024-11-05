@@ -1,4 +1,6 @@
-// Name: Matthew Houe | Date: November 5th 2024 (Re-done the Lab).
+/* This is for Lab#2.
+ * Name: Matthew Houle | Date: November 5th 2024 (Re-done the Lab).
+ */
 
 //TASK #2 Add import statement here to use the Scanner class
 import java.util.Scanner;

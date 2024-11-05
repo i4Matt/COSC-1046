@@ -1,5 +1,6 @@
-/* This program is used for calculating the Miles per Galons used.
- * Name: Matthew Houe | Date: November 5th 2024 (Re-done the Lab).
+/* This is for Lab#2.
+ * This program is used for calculating the Miles per Galons used.
+ * Name: Matthew Houle | Date: November 5th 2024 (Re-done the Lab).
  */
 
 // IMPORTS

@@ -1,3 +1,7 @@
+/* This is for Lab#1.
+ * Name: Matthew Houle | Date: November 5th 2024 (Re-done the Lab).
+ */
+
 public class Calculator {
     public static void main(String[] args) {
         // Declare two variables to store numbers

@@ -1,3 +1,7 @@
+/* This is for Lab#X.
+ * Name: Matthew Houle | Date: November 5th 2024 (Re-done the Lab).
+ */
+
 import java.util.Scanner;
 
 public class CopyPastas {

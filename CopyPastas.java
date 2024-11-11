@@ -65,5 +65,25 @@ public class CopyPastas {
         return userInput;
     }
     
+
+    // GETS USER INPUT AND RETURNS AN DOUBLE
+    public static double myDubInput(String txt){
+        Scanner keyboard = new Scanner(System.in);
+        double userInput;
+            
+        while (true) {
+            System.out.print(txt);
+            try { // CHECKS TO MAKE SURE THAT THE INPUT IS VALID.
+                userInput = keyboard.nextDouble(); // RECEIVE USER INPUT.
+                break;
+            } catch (Exception e) {
+                keyboard.next();
+                System.out.println();
+            }
+        }
+            
+        keyboard.close();
+        return userInput;
+    }
     public static void main(String[] args){}
 }

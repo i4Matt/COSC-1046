@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class CopyPastas {
     // GETS USER INPUT AND RETURNS A STRING
-    public static String myUserInput(String txt){
-        Scanner keyboard = new Scanner(System.in);
+    public static String myUserInput(Scanner keyboard, String txt){
         String userInput;
         
         while (true) {
@@ -21,13 +20,11 @@ public class CopyPastas {
             }
         }
         
-        keyboard.close();
         return userInput;
     }
 
     // GETS USER INPUT AND RETURNS AN INTENGER
-    public static int myIntInput(String txt){
-        Scanner keyboard = new Scanner(System.in);
+    public static int myIntInput(Scanner keyboard, String txt){
         int userInput;
         
         while (true) {
@@ -41,13 +38,11 @@ public class CopyPastas {
             }
         }
         
-        keyboard.close();
         return userInput;
     }
 
     // GETS USER INPUT AND RETURNS A FLOAT
-    public static float myFloatInput(String txt){
-        Scanner keyboard = new Scanner(System.in);
+    public static float myFloatInput(Scanner keyboard, String txt){
         Float userInput;
         
         while (true) {
@@ -61,14 +56,12 @@ public class CopyPastas {
             }
         }
         
-        keyboard.close();
         return userInput;
     }
     
 
     // GETS USER INPUT AND RETURNS AN DOUBLE
-    public static double myDubInput(String txt){
-        Scanner keyboard = new Scanner(System.in);
+    public static double myDubInput(Scanner keyboard, String txt){
         double userInput;
             
         while (true) {
@@ -82,7 +75,6 @@ public class CopyPastas {
             }
         }
             
-        keyboard.close();
         return userInput;
     }
     public static void main(String[] args){}
